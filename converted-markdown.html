@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Converted from Markdown</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    h1, h2, h3 { color: #333; margin-top: 1.5em; margin-bottom: 0.5em; }
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.2em; }
+    code {
+      background: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+      line-height: 1.4;
+    }
+    blockquote {
+      border-left: 4px solid #ddd;
+      margin: 1em 0;
+      padding-left: 20px;
+      color: #666;
+      font-style: italic;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+    ul, ol {
+      margin: 1em 0;
+      padding-left: 2em;
+    }
+    li {
+      margin: 0.5em 0;
+    }
+  </style>
+</head>
+<body>
+<h1>Privacy Policy — OSM Boundary Extractor</h1>
+<p><strong>Last updated:</strong> February 3, 2025<br><strong>App name:</strong> OSM Boundary Extractor (osmextract-rn)<br><strong>iOS bundle ID:</strong> com.frf11.osmextractrn</p>
+<hr>
+<h2>1. Overview</h2>
+<p>OSM Boundary Extractor is a mobile app (React Native / Expo) that lets you draw a polygon on a map, fetch OpenStreetMap (OSM) data inside that area, and export it as GeoJSON or OSM XML. This policy describes what data the app uses and what we do not collect.</p>
+<hr>
+<h2>2. Data We Do Not Collect</h2>
+<ul>
+<li>We <strong>do not</strong> create accounts or collect sign-in information.</li>
+<li>We <strong>do not</strong> collect your name, email, or any personally identifiable information (PII).</li>
+<li>We <strong>do not</strong> use analytics or tracking in this app.</li>
+<li>We <strong>do not</strong> sell or share your data with third parties for advertising or marketing.</li>
+</ul>
+<hr>
+<h2>3. Data Used by the App</h2>
+<h3>3.1 Location (map display only)</h3>
+<ul>
+<li>The app can show your <strong>device location</strong> on the map (e.g. “Show my location”).  </li>
+<li>Location is used only by the <strong>device OS and the map provider</strong> (Apple Maps on iOS, Google Maps on Android) to display your position.  </li>
+<li>We do not receive, store, or transmit your location to our own servers.</li>
+</ul>
+<h3>3.2 Map points and polygon</h3>
+<ul>
+<li>The <strong>points you tap</strong> on the map (to define your polygon) exist only on your device in the app’s memory during your session.  </li>
+<li>They are not sent to us. They are only used to build a geographic query sent to the Overpass API (see below).</li>
+</ul>
+<h3>3.3 Overpass API (OpenStreetMap)</h3>
+<ul>
+<li>To fetch map data, the app sends a <strong>geographic bounding box</strong> (coordinates) and <strong>category choices</strong> (e.g. roads, buildings) to public <strong>Overpass API</strong> servers (e.g. overpass-api.de).  </li>
+<li>This request does <strong>not</strong> include your identity, device ID, or location; it only describes the map area and data types you requested.  </li>
+<li>The Overpass API is a third-party service; its own practices are governed by the operators of those servers and by the <a href="https://osmfoundation.org/">OpenStreetMap Foundation</a> and <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a> terms where applicable.</li>
+</ul>
+<h3>3.4 Exports (GeoJSON / OSM)</h3>
+<ul>
+<li>Exported files (GeoJSON or OSM XML) are written to your <strong>device’s app cache</strong> and then shared via your <strong>system share sheet</strong> (e.g. Save to Files, email, other apps).  </li>
+<li>We do not receive or store these files. Where they go is entirely under your control.</li>
+</ul>
+<h3>3.5 Expo / EAS Updates</h3>
+<ul>
+<li>The app may use <strong>Expo EAS Update</strong> to check for and download new versions.  </li>
+<li>That involves communication with Expo’s infrastructure (e.g. <code>u.expo.dev</code>). Expo’s own privacy policy applies to that service: <a href="https://expo.dev/privacy">Expo Privacy Policy</a>.</li>
+</ul>
+<hr>
+<h2>4. Third-Party Services</h2>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Purpose</th>
+<th>Your data involved</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Apple Maps / MapKit</td>
+<td>Map and location display</td>
+<td>Location (handled by Apple)</td>
+</tr>
+<tr>
+<td>Google Maps</td>
+<td>Map display (Android)</td>
+<td>Location (handled by Google)</td>
+</tr>
+<tr>
+<td>Overpass API</td>
+<td>Fetch OSM data</td>
+<td>Bounding box + category (no identity)</td>
+</tr>
+<tr>
+<td>Expo (EAS Updates)</td>
+<td>App updates</td>
+<td>Standard update checks (see Expo’s policy)</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>5. Data Storage and Retention</h2>
+<ul>
+<li>No personal data is stored on our servers; we do not operate backend servers for this app.  </li>
+<li>Any temporary data (e.g. cache files for export) stays on your device and can be cleared by clearing the app’s cache or uninstalling the app.</li>
+</ul>
+<hr>
+<h2>6. Your Rights and Choices</h2>
+<ul>
+<li>You can <strong>deny location</strong> when the app or OS asks; the app will still work, but the map may not show your position.  </li>
+<li>You control <strong>what you export</strong> and where you share it via the system share sheet.  </li>
+<li>If you have questions or want to request deletion of any data you believe we hold, contact us (see Section 8). We do not collect PII, but we will respond to reasonable requests.</li>
+</ul>
+<hr>
+<h2>7. Changes to This Policy</h2>
+<p>We may update this privacy policy from time to time. The “Last updated” date at the top will be revised when we do. Continued use of the app after changes constitutes acceptance of the updated policy. For significant changes, we may provide notice in the app or via the store listing if possible.</p>
+<hr>
+<h2>8. Contact</h2>
+<p>If you have questions about this privacy policy or the app’s data practices, please contact:</p>
+<ul>
+<li><strong>Placeholder:</strong> Replace with your preferred contact (e.g. email or support URL).</li>
+</ul>
+<hr>
+<h2>9. Where to Find This Policy</h2>
+<p>This policy is available at:</p>
+<p><strong>Privacy policy URL:</strong> [Replace with your live URL – see below]</p>
+<p>Use this same URL in your App Store and Google Play store listings, and in the app (e.g. in Settings or About) so users can open it in a browser.</p>
+
+</body>
+</html>
