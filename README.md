@@ -1,0 +1,1 @@
+# osmextractor-rnprivacypolicy
